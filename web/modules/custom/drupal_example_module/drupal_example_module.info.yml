@@ -1,0 +1,6 @@
+name: drupal_example_module
+type: module
+description: A simple module for the course.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

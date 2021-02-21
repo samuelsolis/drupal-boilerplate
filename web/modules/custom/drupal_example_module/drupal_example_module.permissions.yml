@@ -1,0 +1,4 @@
+administer drupal_example_module configuration:
+  title: 'Administer drupal_example_module configuration'
+  description: 'Optional description.'
+  restrict access: true
