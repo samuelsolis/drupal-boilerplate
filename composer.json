@@ -25,6 +25,7 @@
         "drupal/core-recommended": "^9.0",
         "drupal/devel": "^4.1",
         "drupal/examples": "^3.0",
+        "drupal/migrate_tools": "^5.0",
         "drupal/restui": "^1.19",
         "drush/drush": "^10.3",
         "vlucas/phpdotenv": "^5.1",

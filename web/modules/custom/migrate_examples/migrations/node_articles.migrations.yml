@@ -1,0 +1,23 @@
+id: custom_article_migration
+label: 'Custom article migration'
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      id: 1
+      title: 'Page 1 title'
+      content: '<p>Page 1 content</p>'
+    -
+      id: 2
+      title: 'Page 2 title'
+      content: '<p>Page 2 content</p>'
+  ids:
+    id:
+      type: integer
+process:
+  nid: id
+  title: title
+  body: content
+destination:
+  plugin: entity:node
+  default_bundle: article
