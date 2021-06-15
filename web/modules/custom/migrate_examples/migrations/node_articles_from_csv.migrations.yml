@@ -1,0 +1,30 @@
+id: custom_article_migration_from_csv
+label: 'Custom article migration from csv'
+source:
+  plugin: csv
+  path: /tmp/articles.csv
+  ids: [id]
+  fields:
+    -
+      name: id
+      label: ID
+    -
+      name: title
+      label: Title
+    -
+      name: description
+      label: Description
+process:
+  nid: id
+  title:
+    plugin: default_value
+    source: title
+    default_value: 'No title found'
+  body:
+    - plugin: concat
+      source:
+        - title
+        - description
+destination:
+  plugin: entity:node
+  default_bundle: article
