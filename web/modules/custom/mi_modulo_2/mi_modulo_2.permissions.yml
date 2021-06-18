@@ -1,0 +1,4 @@
+administer mi_modulo_2 configuration:
+  title: 'Administer mi_modulo_2 configuration'
+  description: 'Optional description.'
+  restrict access: true

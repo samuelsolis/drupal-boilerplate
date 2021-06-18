@@ -1,0 +1,7 @@
+mi_modulo_2.example:
+  path: '/mi-modulo-2/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\mi_modulo_2\Controller\MiModulo2Controller::build'
+  requirements:
+    _permission: 'access content'
