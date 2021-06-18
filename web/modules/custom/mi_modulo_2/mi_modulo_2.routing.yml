@@ -5,3 +5,11 @@ mi_modulo_2.example:
     _controller: '\Drupal\mi_modulo_2\Controller\MiModulo2Controller::build'
   requirements:
     _permission: 'access content'
+
+mi_modulo_2.example2:
+  path: '/mi-modulo-2/example2'
+  defaults:
+    _title: 'Example2'
+    _controller: '\Drupal\mi_modulo_2\Controller\MiModulo2Controller::example'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+mi_modulo_2.menu_example:
+  title: 'Menu Example 2'
+  description: 'Simplest possible menu type, and the parent menu entry for others'
+  route_name: mi_modulo_2.example2
+  parent: system.admin_content
