@@ -1,4 +1,4 @@
 services:
-  custom_entity.error_subscriber:
+  custom_entity.manager:
     class: Drupal\custom_entity\CustomEntityManager
     arguments: ['@entity_type.manager']

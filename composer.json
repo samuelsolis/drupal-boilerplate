@@ -28,6 +28,7 @@
         "drupal/migrate_source_csv": "^3.4",
         "drupal/migrate_tools": "^5.0",
         "drupal/restui": "^1.19",
+        "drupal/views_year_filter": "^1.6",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.3",
         "vlucas/phpdotenv": "^5.1",
