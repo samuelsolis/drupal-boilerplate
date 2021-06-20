@@ -10,7 +10,7 @@ use Drupal\custom_entity\Entity\CustomEntity;
  * Class customEntityManager
  * @package Drupal\custom_entity
  */
-class customEntityManager {
+class CustomEntityManager {
 
   protected $entityTypeManager;
 
@@ -21,13 +21,6 @@ class customEntityManager {
   public function __construct(EntityTypeManagerInterface $entityTypeManager) {
     $this->entityTypeManager = $entityTypeManager;
   }
-
-  /**
-   * @param string $title
-   *   The title to serch.
-   * @return CustomEntity|null
-   *   The entity loaded if exists.
-   */
 
   /**
    * @param string $title

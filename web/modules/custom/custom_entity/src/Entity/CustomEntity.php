@@ -146,6 +146,16 @@ class CustomEntity extends ContentEntityBase implements CustomEntityInterface {
   }
 
   /**
+   * Unpublish the current entity setting the status to False.
+   *
+   * @return $this
+   */
+  public function unpublish() : CustomEntity {
+    $this->set('status', FALSE);
+    return $this;
+  }
+
+  /**
    * {@inheritdoc}
    */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
