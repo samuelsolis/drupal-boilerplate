@@ -1,0 +1,8 @@
+# Schema for the configuration files of the theme_test theme.
+theme_test.settings:
+  type: theme_settings
+  label: 'theme_test settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size
