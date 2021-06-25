@@ -38,6 +38,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   config_export = {
  *     "id",
  *     "label",
+ *     "description",
  *     "uuid",
  *   }
  * )
@@ -57,5 +58,10 @@ class CustomEntityType extends ConfigEntityBundleBase {
    * @var string
    */
   protected $label;
+
+  /**
+   * @var textfield
+   */
+  protected $description;
 
 }

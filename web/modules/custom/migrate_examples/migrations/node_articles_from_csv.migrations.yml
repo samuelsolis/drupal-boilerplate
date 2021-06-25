@@ -17,9 +17,16 @@ source:
 process:
   nid: id
   title:
-    plugin: default_value
-    source: title
-    default_value: 'No title found'
+    -
+      plugin: str_replace
+      case_insensitive: true
+      source: title
+      search: 'http://urlantigua.com'
+      replace: 'http://urlnueva.com'
+    -
+      plugin: default_content
+      default_content: 'No content'
+
   body:
     - plugin: concat
       source:

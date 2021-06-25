@@ -11,6 +11,10 @@ source:
       id: 2
       title: 'Page 2 title'
       content: '<p>Page 2 content</p>'
+    -
+      id: 3
+      title: 'Page 3 title'
+      content: '<p>Page 3 content</p>'
   ids:
     id:
       type: integer

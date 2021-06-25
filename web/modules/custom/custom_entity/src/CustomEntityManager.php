@@ -4,7 +4,6 @@ namespace Drupal\custom_entity;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\custom_entity\Entity\CustomEntity;
 
 /**
  * Class customEntityManager
@@ -23,8 +22,11 @@ class CustomEntityManager {
   }
 
   /**
+   * Load an entity based on his title.
+   *
    * @param string $title
-   *   The title to serch.
+   *   The title to search.
+   *
    * @return EntityInterface|null
    *   The entity loaded if exists.
    *
@@ -32,9 +34,10 @@ class CustomEntityManager {
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
   public function loadCustomEntityByTitle(string $title) :? EntityInterface {
-      $entities = $this->entityTypeManager
-        ->getStorage('custom_entity')
-        ->loadByProperties(['title' => $title]);
+
+    $entities = $this->entityTypeManager
+      ->getStorage('custom_entity')
+      ->loadByProperties(['title' => $title]);
 
     return reset($entities);
   }

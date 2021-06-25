@@ -37,6 +37,15 @@ class CustomEntityTypeForm extends BundleEntityFormBase {
       '#size' => 30,
     ];
 
+    $form['description'] = [
+      '#title' => $this->t('Description'),
+      '#type' => 'textfield',
+      '#default_value' => $entity_type->get('description'),
+      '#description' => $this->t('The human-readable name of this custom entity type.'),
+      '#required' => TRUE,
+      '#size' => 30,
+    ];
+
     $form['id'] = [
       '#type' => 'machine_name',
       '#default_value' => $entity_type->id(),
@@ -69,6 +78,7 @@ class CustomEntityTypeForm extends BundleEntityFormBase {
 
     $entity_type->set('id', trim($entity_type->id()));
     $entity_type->set('label', trim($entity_type->label()));
+    $entity_type->set('description', trim($entity_type->get('description')));
 
     $status = $entity_type->save();
 
